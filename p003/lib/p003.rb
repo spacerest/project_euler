@@ -6,15 +6,7 @@
 class P003
 
   def is_prime?(number)
-    @prime = true
-      (2...(number/2 + 1)).to_a.each { |i|  
-        if @prime == false
-          break
-        elsif number % i == 0
-          @prime = false
-        end
-      }
-    @prime
+    (2..number/2).none? { |i| number % i == 0 }
   end
 
   def prime_factors_of(number)
