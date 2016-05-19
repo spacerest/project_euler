@@ -39,7 +39,11 @@ describe P008 do
   end
 
   it 'finds the max product of two adjacent numbers' do
-    expect(p008.max_adj_prod(2)).to eq 18
+    expect(p008.max_adj_prod(2)).to eq 81
+  end
+
+  it 'finds the max product of four adjacent numbers' do
+    expect(p008.max_adj_prod(4)).to eq 5832
   end
 end
 

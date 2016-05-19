@@ -34,7 +34,20 @@ class P008
   end
 
   def max_adj_prod(num_digits)
-    9
+    @number_ary = @thou_dig_num.to_s.split("")
+    @placeholder_prod = 1
+    @max_prod = 1
+    @number_ary.each_index { |v|
+      @count = 0
+      num_digits.times do
+	@placeholder_prod *= @number_ary[v + @count].to_i
+	@count += 1
+      end
+    @placeholder_prod > @max_prod ? @max_prod = @placeholder_prod : false
+    @placeholder_prod = 1
+    @placeholder_ary = []
+     }
+    @max_prod 
   end  
 
 
