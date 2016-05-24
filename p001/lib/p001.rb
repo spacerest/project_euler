@@ -6,7 +6,6 @@ class P001
 
   def define_natural_number
     @definition = 'a whole number zero and up'
-    @definition
   end
 
   def list_naturals_under(highest)
